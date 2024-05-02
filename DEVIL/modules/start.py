@@ -22,7 +22,7 @@
 
 from telethon import __version__, events, Button
 
-from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10
+from config import KEX1, KEX2, KEX3, KEX4, KEX5, KEX6, KEX7, KEX8, KEX9, KEX10
 
 
 START_BUTTON = [
@@ -36,17 +36,17 @@ START_BUTTON = [
 ]
 
 
-@X1.on(events.NewMessage(pattern="/start"))
-@X2.on(events.NewMessage(pattern="/start"))
-@X3.on(events.NewMessage(pattern="/start"))
-@X4.on(events.NewMessage(pattern="/start"))
-@X5.on(events.NewMessage(pattern="/start"))
-@X6.on(events.NewMessage(pattern="/start"))
-@X7.on(events.NewMessage(pattern="/start"))
-@X7.on(events.NewMessage(pattern="/start"))
-@X8.on(events.NewMessage(pattern="/start"))
-@X9.on(events.NewMessage(pattern="/start"))
-@X10.on(events.NewMessage(pattern="/start"))
+@KEX1.on(events.NewMessage(pattern="/start"))
+@KEX2.on(events.NewMessage(pattern="/start"))
+@KEX3.on(events.NewMessage(pattern="/start"))
+@KEX4.on(events.NewMessage(pattern="/start"))
+@KEX5.on(events.NewMessage(pattern="/start"))
+@KEX6.on(events.NewMessage(pattern="/start"))
+@KEX7.on(events.NewMessage(pattern="/start"))
+@KEX7.on(events.NewMessage(pattern="/start"))
+@KEX8.on(events.NewMessage(pattern="/start"))
+@KWX9.on(events.NewMessage(pattern="/start"))
+@KEX10.on(events.NewMessage(pattern="/start"))
 async def start(event):              
     if event.is_private:
         AltBot = await event.client.get_me()
